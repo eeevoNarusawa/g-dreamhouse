@@ -1,0 +1,31 @@
+// main: ../../default.scss
+$breakpoints: (
+  'sp': 'screen and (max-width: 700px)',
+  'pc': 'screen and (min-width: 701px)',
+  'ie': 'all and (-ms-high-contrast: none)',
+) !default;
+
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin container($container: 980px, $marginAuto: 0 auto) {
+  width: $container;
+  margin: $marginAuto;
+}
+@mixin containerS($container: 90%, $marginAuto: 0 auto) {
+  width: $container;
+  margin: $marginAuto;
+}
+
+@mixin flex() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin tableCell($tableCell: table-cell, $verticalAlign: middle) {
+  display: $tableCell;
+  vertical-align: $verticalAlign;
+}

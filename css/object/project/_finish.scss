@@ -1,0 +1,25 @@
+// main: ../../default.scss
+.finish {
+  margin-top: 80px;
+  text-align: center;
+  height: 66vh;
+  &--ttl {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    @include mq(sp) {
+      font-size: 2.4rem;
+    }
+  }
+  &--totop {
+    margin: 40px 0 24px;
+    color: #333;
+  }
+  &--website {
+    background: #d6d6d6;
+    padding: 8px 0;
+    color: #fff;
+    width: 220px;
+    margin: 0 auto;
+  }
+}

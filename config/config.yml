@@ -1,0 +1,8 @@
+config:
+    email: y-kimura@asahigloval.com,t-uchida@asahigloval.com,r-kawata@asahigloval.com,agg-contact@asahigloval02.sakura.ne.jp
+    subject: 【モデルハウス郷津LP】ホームページから予約がありました。
+    auto_reply: true
+    auto_reply_from_email: info@g-dreamhome.com
+    return_path: info@g-dreamhome.com
+    auto_reply_subject: 【グッドドリームホーム】ご予約ありがとうございます。
+    auto_reply_name: 【グッドドリームホーム】

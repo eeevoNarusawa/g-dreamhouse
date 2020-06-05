@@ -1,0 +1,57 @@
+// main: ../../default.scss
+.confirm {
+  margin: 40px 0;
+  &--ttl {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    @include mq(sp) {
+      font-size: 2.4rem;
+    }
+  }
+  &--wrap {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 2rem;
+    @include mq(sp) {
+      width: 98%;
+      font-size: 1.6rem;
+    }
+  }
+  &--item {
+    &__head {
+      width: 300px;
+      font-weight: bold;
+      padding-bottom: 16px;
+    }
+    &__body {
+      padding-bottom: 16px;
+    }
+  }
+  &--submit {
+    background: #D6D2D2;
+    padding: 40px 0;
+    margin-top: 32px;
+  }
+  &--send {
+    text-align: center;
+    input {
+      background: #F39800;
+      color: #fff;
+      padding: 12px 80px;
+      font-size: 2rem;
+      border: none;
+      border-radius: 6px;
+    }
+  }
+  &--fix {
+    text-align: center;
+    margin-top: 24px;
+    input {
+      border: none;
+      background: inherit;
+      font-size: 1.6rem;
+    }
+  }
+}

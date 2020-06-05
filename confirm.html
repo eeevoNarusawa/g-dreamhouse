@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MHFG67V');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>モデルハウス郷津OPEN｜グッドドリームホーム | 三重県・津市・松阪市のローコスト住宅専門店</title>
+    <meta name="description" content="三重県・津市・松阪市のローコスト住宅専門店 グッドドリームホームの、新たなモデルハウスが松阪市郷津町にオープンしました。特典として、来場予約された方に最大3,000円分のマックカードをプレゼント。ぜひご来場ください！">
+    <link rel="stylesheet" type="text/css" href="./css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/default.css?20200605">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel=”canonical” href=”https://g-dreamhome.com/lp/prop-goutsu/” />
+    <link rel="apple-touch-icon" size="144x144" href="https://g-dreamhome.com/lp/prop-goutsu/images/webclip.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="https://g-dreamhome.com/lp/prop-goutsu/images/favicon.png">
+
+
+    <meta property="og:site_name" content="モデルハウス郷津OPEN">
+    <meta property="og:title" content="モデルハウス郷津OPEN｜グッドドリームホーム | 三重県・津市・松阪市のローコスト住宅専門店">
+    <meta property="og:description" content="三重県・津市・松阪市のローコスト住宅専門店 グッドドリームホームの、新たなモデルハウスが松阪市郷津町にオープンしました。特典として、来場予約された方に最大3,000円分のマックカードをプレゼント。ぜひご来場ください！">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://g-dreamhome.com/lp/prop-goutsu/">
+    <meta property="og:image" content="https://g-dreamhome.com/lp/prop-goutsu/images/ogp.jpg">
+    <meta property="og:image:secure_url" content="https://g-dreamhome.com/lp/prop-goutsu/images/ogp.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="モデルハウス郷津OPEN｜グッドドリームホーム | 三重県・津市・松阪市のローコスト住宅専門店">
+    <meta name="twitter:description" content="三重県・津市・松阪市のローコスト住宅専門店 グッドドリームホームの、新たなモデルハウスが松阪市郷津町にオープンしました。特典として、来場予約された方に最大3,000円分のマックカードをプレゼント。ぜひご来場ください！">
+    <meta name="twitter:image" content="https://g-dreamhome.com/lp/prop-goutsu/images/ogp.jpg">
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHFG67V"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+      <picture class="c-logo">
+        <source media="(max-width: 700px)" srcset="./images/sp/logo.svg">
+        <img src="./images/logo.svg" alt="Good Dream Home グッドドリームホーム">
+      </picture>
+    </header>
+
+    <div class="confirm">
+      <div class="l-container">
+        <div class="confirm--ttl">ご入力内容確認</div>
+        <div class="form--step">
+          <div class="form--step-item"><span>STEP1</span><br>入力</div>
+          <div class="form--step-item form--step-item__here"><span>STEP2</span><br>確認</div>
+          <div class="form--step-item"><span>STEP3</span><br>完了</div>
+        </div>
+        <div class="confirm--wrap">
+          <table width="100%" class="alpha">
+              {loop:$params}
+              <tr class="confirm--item">
+                  <th class="confirm--item__head">{$params[].key}&nbsp;</th>
+                  <td class="confirm--item__body">{$params[].value.nl2br}&nbsp;</td>
+              </tr>
+              {/loop:$params}
+              {loop:$files}
+              <tr>
+                  <th>{$files[].key}&nbsp;</th>
+                  <td>{$files[].name}<br>
+                      <img src="index.php?file={$files[].tmp_name}" width="300"><br>
+                      <a href="index.php?file={$files[].tmp_name}" target="_blank" class="external">画像を別ウィンドウで開く</a></td>
+              </tr>
+              {/loop:$files}
+          </table>
+          <div class="confirm--submit">
+            <form method="post" action="index.php?finish" class="confirm--send">
+                {$hiddens}
+                <input type="hidden" name="page" value="finish">
+                <input type="submit" value="送信する">
+            </form>
+            <form method="post" action="index.php#form" class="confirm--fix">
+                {$hiddens}
+                <input type="hidden" name="page" value="input">
+                <input type="submit" value="入力内容を修正する">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <picture class="c-logo">
+        <source media="(max-width: 700px)" srcset="./images/sp/logo.svg">
+        <img src="./images/logo.svg" alt="Good Dream Home グッドドリームホーム">
+      </picture>
+      <div class="copy-right">copyright (c) アサヒグローバル株式会社 All rights reserved.</div>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125019006-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125019006-1');
+    </script>
+  </body>
+</html>
